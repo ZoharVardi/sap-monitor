@@ -25,21 +25,6 @@ Jenkinsfile → pipeline for SAP Monitor
 
 simple-java-maven-app/Jenkinsfile → Example Java Main CI/CD
 
-🧩 Architecture Overview
-+-----------------------+       +----------------------+
-| SAP Monitor (FastAPI) | <---> | Prometheus Scraper   |
-|   /metrics endpoint   |       +----------------------+
-|   /api/gate for CI/CD |                |
-+-----------+-----------+                |
-            |                            v
-            |                 +----------------------+
-            +---------------> | Grafana Dashboard    |
-            |                  +----------------------+
-            |                        
-+----------------------+
-| Jenkins Pipelines    |
-+----------------------+
-
 ⚙️ Installation (Local)
 1️⃣ Clone the repository
 git clone https://github.com/zoharvardi/sap-monitor.git
@@ -129,19 +114,6 @@ Prometheus Metrics:
 endpoint_up{url="https://api.sap.com/..."} 1
 monitor_can_deploy 1
 
-📂 Project Structure
-sap-monitor/
-├── monitor_app.py             # FastAPI app
-├── Dockerfile                 # Container image
-├── Jenkinsfile                # FastAPI CI/CD pipeline
-├── prometheus.yml             # Prometheus config
-├── grafana-data/              # Grafana local data
-├── screenshots/               # Images for README
-├── simple-java-maven-app/
-│   ├── Jenkinsfile            # Java example pipeline
-│   └── pom.xml                # Example Maven project
-├── requirements.txt
-└── README.md
 
 🧠 Tech Stack
 Component	Purpose
@@ -151,4 +123,5 @@ Grafana	Visualization layer
 Docker	Containerization
 Jenkins	CI/CD pipelines (Python + Java examples)
 Maven	Java build automation (sample app)
+
 
