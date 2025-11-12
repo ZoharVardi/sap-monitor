@@ -30,6 +30,10 @@ simple-java-maven-app/Jenkinsfile → Example Java Main CI/CD
 
 
 
+
+
+
+
 ⚙️ Installation (Local)
 
 1️⃣ Clone the repository
@@ -133,6 +137,7 @@ Grafana	Visualization layer
 Docker	Containerization
 Jenkins	CI/CD pipelines (Python + Java examples)
 Maven	Java build automation (sample app)
+
 
 
 
